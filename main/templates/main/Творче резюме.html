@@ -1,0 +1,236 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block title %}
+{{ title }}
+Paint Resume
+{% endblock %}
+
+{% block content %}
+<!-- 	<h1>
+		Главная
+
+	</h1> -->
+
+
+	<div class="Full">
+		<div class="Cont_1">
+			<div class="MyName">
+
+				<div class="Name">
+					
+					<h1> LYUBOMIR PEDCHENKO </h1>
+				</div>
+				<div class="posit">
+					
+					<h1 class="Dev">WEB DEVELOPER</h1>
+				</div>
+
+				<!-- <img src="images/Face.jpg" height="190" width="190"> -->
+			</div>
+		</div>		
+		<div class="Flex">
+			<div class="Cont_2">
+				<div class="Block_1">
+					<img class="schoolF" src="{% static 'images/school.jpg' %}">
+
+					<h1 id="A_1" class="Aduk"> GOT ADUCATION </h1>
+					<h2 id="A_1" class="Year"> 2008 - 2019 </h2>
+					<p id="A_1" class="Expl"> Cherkasy gymnasium №9, Ukraine </p>
+				</div>
+				<div class="Block_2">
+					<img class="Univer" src="{% static 'images/univer.jpg' %}">
+
+
+					<h2 id="A_1" class="Year"> 2019 - now </h2>
+					<p id="A_1" class="Expl"> Cherkasy State Technological University, Ukraine </p>
+				</div>
+
+				<div class="Block_3">
+					<img class="Work" src="{% static 'images/work.jpg' %}">
+
+					<h1 id="A_1" class="Aduk"> GOT EXPERIENCE </h1>
+					<h2 id="A_1" class="Year"> April / 2019 </h2>
+					<p id="A_1" class="Expl"> DeadOffice, Cherkasy, Ukraine </p>
+
+				</div>
+
+			</div>
+
+			<div class="Line">
+				
+			</div>
+			<div class="Cont_3">
+				<div>
+					<img class="Face" src="{% static 'images/Face.jpg' %}">
+
+					<h1 id="A_1" class="Aduk"> HEY, GUYS </h1>
+					<p id="A_1" class="Expl"> I'm Lyubomir Pedchenko. I'm professional developer from Ukraine, and I'll be right happy to working with you! </p>
+				</div>
+				<div class="LineHoriz">
+				</div>
+
+				<div class="Address">
+					<h1 id="A_1" class="Aduk"> CITY, COUNTRY </h1>
+					<p id="A_1" class="Expl"> Cherkasy, Ukraine </p>
+					<br/>
+					<h1 id="A_1" class="Aduk"> PHONE NUMBER </h1>
+					<p id="A_1" class="Expl"> +380755971590 </p>
+					<br/>
+					<h1 id="A_1" class="Aduk"> @MAIL </h1>
+					<p id="A_1" class="Expl"> plyubomir@ukr.net </p>
+
+				</div>
+			</div>
+			
+
+		</div>
+
+	</div>
+
+<style type="text/css">
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('fonts/19845.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+	/*background: url('') background-position="fixed";*/
+}
+
+.Full {
+	font-family: 'MyFont';
+	position: absolute;
+	background-color: #9c9483;
+	height: 2000px;
+	width: 64%;
+	/*margin-left: 19%;*/
+}
+.Cont_1 {
+	background: url({% static 'images/images/1043005.jpg' %});
+	height: 270px;
+	/*width: */
+	margin-left: 1%;
+	margin-right: 1%;
+	background-color: #2e2d45;
+	margin-top: 1%;
+}
+.Flex {
+	display: flex;
+	height: 1703px;
+	background-color: #ebe7dd;
+	width: 98%;
+	margin-left: 1%;
+}
+.Cont_2 {
+	width: 59%;
+}
+.Line {
+	margin-top: 70px;
+	border-left: 6px solid #676769;
+	height: 1570px;
+	width: 1%;
+	color: #6f03fc;
+}
+.Cont_3 {
+	width: 40%;
+}
+
+.MyName {
+	position: absolute;
+	color: white;
+	border: 4px solid white;
+	height: 6%;
+	width: 70%;
+
+	margin-left: 15%;
+	margin-top: 3%;
+}
+.Name {
+	font-size: 165%;
+	position: absolute;
+	/*margin-bottom: 2%;*/
+	margin-left: 23%
+	/*margin-top: 10%;*/
+}
+.posit {
+	background-color: white;
+	height: 25%;
+	width: 40%;
+	margin-left: 30%;
+	margin-top: 11.9%
+}
+.Dev {
+	/*margin-left: */
+	text-align: center;
+	font-size: 168%;
+	color: black;
+}
+.schoolF {
+	width: 50%;
+	height: 290px;
+	margin-left: 26%;
+	margin-top: 10%;
+
+}
+#A_1 {
+	text-align: center;
+}
+.Aduk {
+	font-size: 35px;
+}
+.Year {
+	font-size: 30px;
+}
+.Expl {
+	font-size: 28px;
+}
+.Univer {
+	width: 50%;
+	height: 290px;
+	margin-left: 26%;
+	margin-top: 10%;
+}
+.Work {
+	width: 50%;
+	height: 290px;
+	margin-left: 26%;
+	margin-top: 10%;
+}
+.Face {
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 16%;
+}
+.LineHoriz {
+	width: 88%;
+	height: 2%;
+	margin-left: 6%;
+	margin-top: 40%;
+	border-top: 4px solid #676769;
+
+}
+</style>
+	{% if tasks %}
+		{% for el in tasks %}
+			<div class="alert alert-warning mt-2">
+				<h3>{{ el.title }}</h3>
+				<p>{{ el.title }}</p>
+			</div>
+		{% endfor %}
+	{% else %}
+		<!-- <p>У нас нет записей!</p> -->
+	{% endif %}
+	<div>
+
+			
+		
+	</div>
+{% endblock %}
+
+

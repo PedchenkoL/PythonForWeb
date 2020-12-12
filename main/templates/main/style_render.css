@@ -1,0 +1,152 @@
+body {
+	background-color: #0083B8;
+
+}
+.Full {
+	position: absolute;
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: 35px;
+	height: 2200px;
+	width: 64%;
+	background-color: white;
+	margin-left: 18%;
+
+	/*position: center;*/
+}
+.flex {
+	display: flex;
+}
+.Fac {
+	transition: 1000ms;
+}
+.Fac:hover {
+	transform: scale(1.2);
+	padding-right: 30%;
+	
+}
+
+/*Inicialling first Div*/
+.MyFace {
+	padding-top: 80px;
+	padding-left: 34%;
+
+}
+.Cont_1 {
+	/*font-size: 35px;*/
+
+	padding-top: 400px;
+	text-align: center;
+	/*margin-left: %;*/
+	/*border: 3px solid red;*/
+}
+
+/*Inicialling second Div */
+
+.Cont_2 {
+	padding-left: 70px;
+	padding-top: 50px;
+	/*border: 3px solid blue;*/
+	width: 33%;
+	height: 2000px;
+	/*text-align: center;*/
+}
+.han {
+	font-size: 25px;
+	padding-left: 45px;
+	color: #FF0000;
+	transition: 500ms;
+	/*float: left;*/
+	/*border: 3px solid pink;*/
+
+}
+.han:hover {
+	font-size: 30px;
+	color: #FF0087;
+	transition: 500ms;
+}
+/*.han:not:hover {*/
+	/*font-size: 25px;*/
+	/*color: #FF0000;*/
+	/*transition: 250ms;*/
+}
+.ak {
+	padding-left: 80px;
+	color: grey;
+}
+.Introd {
+	transition: 1000ms;
+}
+.Introd:hover {
+	background-color: #C5FFFB;
+}
+
+
+
+.LengIKnow {
+	padding-top: 50px;
+	transition: 1000ms;
+}
+.LengIKnow:hover {
+	background-color: #C5FFFB;
+}
+
+
+.InformT {
+	padding-top: 50px;
+	transition: 1000ms;
+}
+.InformT:hover {
+	background-color: #C5FFFB;
+}
+.REC {
+	padding-top: 50px;
+	transition: 1000ms;
+}
+.REC:hover {
+	background-color: #C5FFFB;
+}
+.Fac {
+	/*background-color: red;*/
+	float: left;
+	height: 40px;
+	width: 38px;
+}
+
+/*Inicialling third Div**/
+
+.Cont_3 {
+	padding-top: 50px;
+	padding-left: 15%;
+	/*border: 3px solid blue;*/
+	/*float: top;*/
+	/*float: right;*/
+
+}
+.ProEx {
+	transition: 1000ms;
+}
+.ProEx:hover {
+	background-color: #C5FFFB;
+}
+.hi {
+	font-size: 25px;
+	padding-left: 80px;
+	line-height: 2px;
+}
+.ht {
+	line-height: 0.9em;	
+	padding-left: 80px;
+	font-size: 20px;
+}
+.all {
+	padding-left: 80px;
+	font-size: 20px;
+	color #575757;
+}
+.Educ {
+	padding-top: 50px;
+	transition: 1000ms;
+}
+.Educ:hover {
+	background-color: #C5FFFB;
+}

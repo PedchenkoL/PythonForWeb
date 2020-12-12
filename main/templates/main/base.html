@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+
+
+<html>
+ <head>
+  <meta charset="utf-8">
+  <!-- <title>Тег FORM</title> -->
+  <title>{% block title %}{% endblock %}  </title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ <body>
+ 	<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+
+  <h5 id="mymd2" class="my-0 mr-md-auto font-weight-normal">AnyResumes.cum</h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" href="{% url 'home'%}">Resume </a>
+    <a class="p-2 text-dark" href="{%url 'about-us'%}">Adaptive Resume</a>
+    <a class="p-2 text-dark" href="{%url 'paint'%}">Paint Resume</a>
+    <a class="p-2 text-dark" href="{%url 'paintAdaptive'%}">Paint Adaptive Resume</a>
+    <a class="p-2 text-dark" href="{%url 'post_list'%}">BlogRoom</a>
+    <a class="p-2 text-dark" href="{%url 'admin'%}">Create Form</a>
+  </nav>
+
+</div>
+	<!-- <h1>Страница про нас</h1> -->
+
+	
+  <div class="container">
+      {% block content %}{% endblock %}
+      
+  </div>
+</body>
+</html>

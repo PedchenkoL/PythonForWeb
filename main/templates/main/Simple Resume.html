@@ -1,0 +1,293 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block title %}
+{{ title }}
+Simple Resume
+{% endblock %}
+
+{% block content %}
+<!-- 	<h1>
+		Главная
+
+	</h1> -->
+
+
+	<div class="Full">
+		<div class="MyFace">
+			<div class = "Fac"> <img src= "{% static 'images/Face.png' %}" width="400" height="400"> </div>
+		</div>
+		<div class="Cont_1"> <br/>
+
+			<h1 class="hm"> Lyubomir Pedchenko </h1>
+			<h2 class="hn"> Student in IT since 2019 - Software developer </h2>
+			<!-- <a href="www.google.com">Hello world! </a> -->
+		</div>
+	<div class="flex">
+		<div class="Cont_2">
+			<div class="Introd"> 
+				<div class = "Fac"> <img src="{% static 'images/1.jpg' %}" width="38" height="40"> </div>
+				<div class="Bord">  </div>
+				<div class="han"> <u> <big> INTRODUCTION._________ </big> </u> <br/> </div>
+				<!-- <a class="line" href="#">  </a> -->
+<br/>
+				<a class="ak" href="https://www.google.com.ua/maps/place/Черкассы,+Черкасская+область,+18000/@49.4310484,31.9091455,11z/data=!3m1!4b1!4m5!3m4!1s0x40d14b866064977f:0xf8dce723a9cbb5d8!8m2!3d49.444433!4d32.059767?hl=ru"> Cherkasy, Ukraine <br/> </a>
+				<a class="ak" href="#"> +380985931290 <br/> </a>
+				<a class="ak" href="https://mail.ukr.net/desktop"> plyubomir@ukr.net </a>
+				<br/>
+			</div>
+
+			<div class="LengIKnow"> 
+				<div class = "Fac"> <img src="{% static 'images/2.jpg' %}" width="38" height="40"> </div>
+
+				<div class="han"> <u> <big> FOREIGN_LANGUAGES._ </big> </u> <br/> </div>
+<br/>
+				<u class="ak"> English <br/> </u>
+				<u class="ak"> Russian <br/> </u>
+				<u class="ak"> Ukrainian </u>
+				<br/>
+			</div>
+
+			<div class="InformT">
+				<div class = "Fac"> <img src="{% static 'images/3.jpg' %}" width="38" height="40"> </div>
+				<div class="han"> <u> <big> INFORMATION_TECHNOLOGIES. </big> </u> <br/> </div>
+<br/>
+				<u class="ak"> C++ <br/> </u>
+				<u class="ak"> JavaScript <br/> </u>
+				<u class="ak"> Photoshop <br/> </u>
+				<u class="ak"> HTML & CSS <br/> </u>
+			</div>
+
+			<div class="REC">
+				<div class = "Fac"> <img src="{% static 'images/4.jpg' %}" width="38" height="40"> </div>
+				<div class="han"> <u> <big> RECREATION.__________ </big> </u> <br/> </div>
+<br/>
+				<p class = "Face"> <img src="{% static 'images/I like.jpg' %}" width="410" height="410"> </p>
+			</div>
+		</div>
+
+		<div class="Cont_3">
+			<!-- <a href="www.google.com">Hello world! </a> -->
+			<div class="ProEx">
+				<div class = "Fac"> <img src="{% static 'images/5.jpg' %}" width="39" height="53"> </div>
+				<div class="han"> <u> <big> PROFFESIONAL_EXPIRIENCE.__ </big> </u> <br/> </div>
+<br/>
+				<h1 class="hi"> <strong> November </strong></h1>
+				<br/>
+				<h3 class="hu"> April / 2019 </h3>
+				<br/>
+				<h2 class="ht"> Web app - DeenOffice, Cherkasy, Ukraine </h2>
+				<p class="all"> Web app about timetable for students of Cherkasy State Technological University
+				</p>
+			</div>
+
+			<div class="Educ">
+				<div class = "Fac"> <img src="{% static 'images/6.jpg' %}" width="42" height="45"> </div>
+				<div class="han"> <u> <big>  EDUCATION.____________________________ </big> </u> <br/> </div>
+			<br/>
+			<div class="Edu1">
+				<h1 class="hi"> 2008 - 2012 </h1>
+				<br/>
+				<h2 class="ht"> Junior school, Cherkasy gymnasium №9, Ukraine </h2>
+				<p class="all"> Learned general subjects. Average mark: 9 points. </p>
+				<br/>
+				<h1 class="hi"> 2012 - 2016 </h1>
+				<br/>
+				<h2 class="ht"> Secondary school, Cherkasy gymnasium №9, Ukraine </h2>
+				<p class="all"> Learned general subjects. Average mark: 9,5 points. </p>
+				<br/>
+				<h1 class="hi"> 2016 - 2019 </h1>
+				<br/>
+				<h2 class="ht"> High school, Cherkasy gymnasium №9, Ukraine </h2>
+				<p class="all"> Learned 3 special subjects: Math, Ukrainian and English. Average mark: 9 points. </p>
+				<br/>
+				<h1 class="hi"> 2019 - now </h1>
+				<br/>
+				<h2 class="ht"> Became studying in Cherkasy State Technological University, Softwere developing course. </h2>
+				<p class="all"> Learned 3 special subjects: Math, Ukrainian and English. Average mark: 9 points. </p>
+			</div>
+			</div>
+		</div>
+	</div>
+	</div>
+<style type="text/css">
+	body {
+	background-color: #0083B8;
+
+}
+.Full {
+	position: absolute;
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: 35px;
+	height: 2200px;
+	width: 64%;
+	background-color: white;
+	/*margin-left: 18%;*/
+
+	/*position: center;*/
+}
+.flex {
+	display: flex;
+}
+.Fac {
+	/*transition: 500ms;*/
+}
+.Fac:hover {
+	/*transform: scale(1.2);*/
+	/*padding-right: 30%;*/
+	
+}
+
+/*Inicialling first Div*/
+.MyFace {
+	padding-top: 80px;
+	padding-left: 34%;
+
+}
+.Cont_1 {
+	/*font-size: 35px;*/
+
+	padding-top: 400px;
+	text-align: center;
+	/*margin-left: %;*/
+	/*border: 3px solid red;*/
+}
+
+/*Inicialling second Div */
+
+.Cont_2 {
+	
+	padding-left: 70px;
+	padding-top: 50px;
+	/*border: 3px solid blue;*/
+	width: 33%;
+	height: 2000px;
+	/*text-align: center;*/
+}
+.han {
+	font-size: 15px;
+	padding-left: 25px;
+	color: #FF0000;
+	transition: 500ms;
+	/*float: left;*/
+	/*border: 3px solid pink;*/
+
+}
+/*.han:hover {
+	font-size: 17px;
+	color: #FF0087;
+	transition: 500ms;
+}*/
+/*.han:not:hover {*/
+	/*font-size: 25px;*/
+	/*color: #FF0000;*/
+	/*transition: 250ms;*/
+}
+.ak {
+	padding-left: 80px;
+	color: grey;
+}
+.Introd {
+	/*transition: 1000ms;*/
+}
+.Introd:hover {
+	/*background-color: #C5FFFB;*/
+}
+
+
+
+.LengIKnow {
+	padding-top: 50px;
+	/*transition: 1000ms;*/
+}
+.LengIKnow:hover {
+	/*background-color: #C5FFFB;*/
+}
+
+
+.InformT {
+	padding-top: 50px;
+	/*transition: 1000ms;*/
+}
+.InformT:hover {
+	/*background-color: #C5FFFB;*/
+}
+.REC {
+	padding-top: 50px;
+	/*transition: 1000ms;*/
+}
+.REC:hover {
+	/*background-color: #C5FFFB;*/
+}
+.Fac {
+	/*background-color: red;*/
+	float: left;
+	height: 40px;
+	width: 38px;
+}
+
+/*Inicialling third Div**/
+
+.Cont_3 {
+	padding-top: 50px;
+	padding-left: 15%;
+	/*border: 3px solid blue;*/
+	/*float: top;*/
+	/*float: right;*/
+
+}
+.ProEx {
+	/*transition: 1000ms;*/
+}
+.ProEx:hover {
+	/*background-color: #C5FFFB;*/
+}
+.hi {
+	font-size: 35px;
+	padding-left: 80px;
+	line-height: 2px;
+}
+.hu {
+	font-size: 25px;
+	padding-left: 80px;
+	line-height: 0px;
+	color: #7d7d7d;
+}
+.ht {
+	line-height: 0.9em;	
+	padding-left: 80px;
+	font-size: 20px;
+}
+.all {
+	padding-left: 80px;
+	font-size: 20px;
+	color #575757;
+}
+.Educ {
+	padding-top: 50px;
+	/*transition: 1000ms;*/
+}
+.Educ:hover {
+	/*background-color: #C5FFFB;*/
+}
+
+</style>
+	{% if tasks %}
+		{% for el in tasks %}
+			<div class="alert alert-warning mt-2">
+				<h3>{{ el.title }}</h3>
+				<p>{{ el.title }}</p>
+			</div>
+		{% endfor %}
+	{% else %}
+		<!-- <p>У нас нет записей!</p> -->
+	{% endif %}
+	<div>
+
+			
+		
+	</div>
+{% endblock %}
+
+

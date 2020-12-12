@@ -1,0 +1,50 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block title %}
+{{ title }}
+Create New Blog
+Adaptive Resume
+{% endblock %}
+
+
+{% block content %}
+
+
+{% for post in posts %}
+	<big class = "title">{{post.title}}</big><br/>
+	<div class="data">{{post.create}}</div>
+	<img src="{{MEDIA_URL}}{{post.image.url}}" style="width: 30%; height: 30%;"><br/><br/>
+	<div class="text">{{post.text}}</div><br/>
+
+	<div class="line">  </div><br/>
+
+{% endfor %}
+
+
+
+<style type="text/css">
+body {
+	background-color: #d1e0e8;
+}
+
+.line {
+	/*margin-left: -white-space: 10%;*/
+	width: 125%;
+	border-top: 3px solid #0000ff; 
+}
+.title {
+	font-size: 40px;
+}
+.data {
+	font-size: 18px;
+}
+.text {
+	font-size: 25px;
+}
+
+</style>
+
+
+{% endblock %}
